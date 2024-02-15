@@ -21,10 +21,34 @@
 
 .primary {
   background-color: var(--color-primary-500);
+
+  &:hover {
+    background-color: var(--color-primary-300);
+  }
+
+  &:active {
+    background-color: var(--color-primary-700);
+  }
+
+  & .disabled {
+    background-color: var(--color-primary-900);
+  }
 }
 
 .secondary {
   background-color: var(--color-dark-300);
+
+  &:hover {
+    background-color: var(--color-dark-100);
+  }
+
+  &:active {
+    background-color: var(--color-dark-500);
+  }
+
+  & .disabled {
+    background-color: var(--color-dark-300);
+  }
 }
 
 .fullWidth {
