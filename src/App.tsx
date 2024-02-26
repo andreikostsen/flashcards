@@ -2,6 +2,8 @@ import { Button } from '@/components/ui/button'
 
 import s from './components/ui/button/button.module.scss'
 
+import logoutIcon from './components/ui/button/log-out-icon.svg'
+
 function App() {
   return (
     <div>
@@ -14,7 +16,19 @@ function App() {
           Button As a
         </Button>
       </div>
+      <div>
+        <Button className={s.button}>
+          <img src={logoutIcon} />
+          Primary with Icon
+        </Button>
+      </div>
+      <div>
+        <Button className={s.button} showIcon>
+          Primary with Icon
+        </Button>
+      </div>
     </div>
   )
 }
+
 export default App

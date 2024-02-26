@@ -24,6 +24,14 @@ export const Primary: Story = {
     variant: 'primary',
   },
 }
+export const PrimaryWithIcon: Story = {
+  args: {
+    children: 'Primary Button',
+    disabled: false,
+    showIcon: true,
+    variant: 'primary',
+  },
+}
 
 export const Secondary: Story = {
   args: {
