@@ -15,12 +15,13 @@ function App() {
           className={s.button}
           fullWidth={false}
           href={'https://my.beltelecom.by/login'}
+          onClick={() => console.log('clicked')}
         >
           Primary Button As a
         </Button>
       </div>
       <div>
-        <Button className={s.button} showIcon>
+        <Button className={s.button} onClick={() => console.log('clicked')} showIcon>
           Primary Button with Icon
         </Button>
       </div>

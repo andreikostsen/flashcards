@@ -24,7 +24,10 @@ export const Button = <T extends ElementType = 'button'>(props: ButtonProps<T>) 
   } = props
 
   return (
-    <Component className={`${s.button} ${s[variant]} ${fullWidth ? s.fullWidth : ''} ${className}`}>
+    <Component
+      className={`${s.button} ${s[variant]} ${fullWidth ? s.fullWidth : ''} ${className}`}
+      {...rest}
+    >
       {showIcon && <img className={s.icon} src={logoutIcon} />}
       {rest.children}
     </Component>
